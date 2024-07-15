@@ -16,9 +16,9 @@ import (
 	"github.com/zhufuyi/sponge/pkg/stat"
 	"github.com/zhufuyi/sponge/pkg/tracer"
 
-	"metax/configs"
-	"metax/internal/config"
-	"metax/internal/model"
+	"dynaone/configs"
+	"dynaone/internal/config"
+	"dynaone/internal/model"
 )
 
 var (
@@ -90,7 +90,7 @@ func initConfig() {
 		// get the configuration from the configuration center (first get the nacos configuration,
 		// then read the service configuration according to the nacos configuration center)
 		if configFile == "" {
-			configFile = configs.Path("metax_cc.yml")
+			configFile = configs.Path("dynaone_cc.yml")
 		}
 		nacosConfig, err := config.NewCenter(configFile)
 		if err != nil {
@@ -114,7 +114,7 @@ func initConfig() {
 	} else {
 		// get configuration from local configuration file
 		if configFile == "" {
-			configFile = configs.Path("metax.yml")
+			configFile = configs.Path("dynaone.yml")
 		}
 		err := config.Init(configFile)
 		if err != nil {

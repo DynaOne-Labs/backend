@@ -20,8 +20,8 @@ import (
 	"github.com/zhufuyi/sponge/pkg/jwt"
 	"github.com/zhufuyi/sponge/pkg/logger"
 
-	"metax/docs"
-	"metax/internal/config"
+	"dynaone/docs"
+	"dynaone/internal/config"
 )
 
 var (

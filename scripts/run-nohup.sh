@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # chkconfig: - 85 15
-# description: metax
+# description: dynaone
 
-serverName="metax"
+serverName="dynaone"
 cmdStr="cmd/${serverName}/${serverName}"
 
 

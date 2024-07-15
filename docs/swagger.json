@@ -6,7 +6,7 @@
     "swagger": "2.0",
     "info": {
         "description": "http server api docs",
-        "title": "metax api docs",
+        "title": "dynaone api docs",
         "contact": {},
         "version": "2.0"
     },

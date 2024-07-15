@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVER_NAME="metax"
+SERVER_NAME="dynaone"
 DEPLOY_FILE="deployments/kubernetes/${SERVER_NAME}-deployment.yml"
 
 function checkResult() {

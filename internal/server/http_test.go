@@ -13,13 +13,13 @@ import (
 	"github.com/zhufuyi/sponge/pkg/servicerd/registry"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/configs"
-	"metax/internal/config"
+	"dynaone/configs"
+	"dynaone/internal/config"
 )
 
 // need real database to test
 func TestHTTPServer(t *testing.T) {
-	err := config.Init(configs.Path("metax.yml"))
+	err := config.Init(configs.Path("dynaone.yml"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -63,7 +63,7 @@ func TestHTTPServer(t *testing.T) {
 }
 
 func TestHTTPServerMock(t *testing.T) {
-	err := config.Init(configs.Path("metax.yml"))
+	err := config.Init(configs.Path("dynaone.yml"))
 	if err != nil {
 		t.Fatal(err)
 	}

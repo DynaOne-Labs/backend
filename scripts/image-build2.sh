@@ -2,9 +2,9 @@
 
 # two-stage build docker image
 
-serverName="metax"
+serverName="dynaone"
 # image name of the service, prohibit uppercase letters in names.
-IMAGE_NAME="metax/metax"
+IMAGE_NAME="dynaone/dynaone"
 # Dockerfile file directory
 DOCKERFILE_PATH="scripts/build"
 DOCKERFILE="${DOCKERFILE_PATH}/Dockerfile_build"

@@ -14,10 +14,10 @@ import (
 	"github.com/zhufuyi/sponge/pkg/gotest"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/cache"
-	"metax/internal/dao"
-	"metax/internal/model"
-	"metax/internal/types"
+	"dynaone/internal/cache"
+	"dynaone/internal/dao"
+	"dynaone/internal/model"
+	"dynaone/internal/types"
 )
 
 func newUserHandler() *gotest.Handler {

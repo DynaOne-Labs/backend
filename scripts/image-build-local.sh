@@ -3,9 +3,9 @@
 # build the image for local docker, using the binaries, if you want to reduce the size of the image,
 # use upx to compress the binaries before building the image.
 
-serverName="metax"
+serverName="dynaone"
 # image name of the service, prohibit uppercase letters in names.
-IMAGE_NAME="metax/metax"
+IMAGE_NAME="dynaone/dynaone"
 # Dockerfile file directory
 DOCKERFILE_PATH="scripts/build"
 DOCKERFILE="${DOCKERFILE_PATH}/Dockerfile"

@@ -11,8 +11,8 @@ import (
 	"github.com/zhufuyi/sponge/pkg/servicerd/registry/etcd"
 	"github.com/zhufuyi/sponge/pkg/servicerd/registry/nacos"
 
-	"metax/internal/config"
-	"metax/internal/server"
+	"dynaone/internal/config"
+	"dynaone/internal/server"
 )
 
 // CreateServices create grpc or http service

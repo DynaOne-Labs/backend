@@ -1,6 +1,6 @@
 #!/bin/bash
 
-serviceName="metax"
+serviceName="dynaone"
 cmdStr="./${serviceName} -c configs/${serviceName}.yml"
 
 chmod +x ./${serviceName}

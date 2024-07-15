@@ -9,7 +9,7 @@ import (
 	"github.com/zhufuyi/sponge/pkg/gotest"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/model"
+	"dynaone/internal/model"
 )
 
 func newUserCache() *gotest.Cache {

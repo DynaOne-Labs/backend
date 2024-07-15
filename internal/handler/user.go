@@ -12,11 +12,11 @@ import (
 	"github.com/zhufuyi/sponge/pkg/logger"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/cache"
-	"metax/internal/dao"
-	"metax/internal/ecode"
-	"metax/internal/model"
-	"metax/internal/types"
+	"dynaone/internal/cache"
+	"dynaone/internal/dao"
+	"dynaone/internal/ecode"
+	"dynaone/internal/model"
+	"dynaone/internal/types"
 )
 
 var _ UserHandler = (*userHandler)(nil)

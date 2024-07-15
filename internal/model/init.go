@@ -14,7 +14,7 @@ import (
 	"github.com/zhufuyi/sponge/pkg/logger"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/config"
+	"dynaone/internal/config"
 )
 
 var (

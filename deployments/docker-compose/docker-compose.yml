@@ -1,11 +1,11 @@
 version: "3.7"
 
 services:
-  metax:
-    image: metax/metax:latest
-    container_name: metax
+  dynaone:
+    image: dynaone/dynaone:latest
+    container_name: dynaone
     restart: always
-    command: ["./metax", "-c", "/app/configs/metax.yml"]
+    command: ["./dynaone", "-c", "/app/configs/dynaone.yml"]
     volumes:
       - $PWD/configs:/app/configs
     ports:

@@ -1,17 +1,17 @@
-# Need to package the code first `tar zcf metax.tar.gz $(ls)` and move it to the same directory as Dokerfile
+# Need to package the code first `tar zcf dynaone.tar.gz $(ls)` and move it to the same directory as Dokerfile
 
 # Compile the go code, you can specify the golang version
 FROM golang:1.21-alpine as build
-COPY . /go/src/metax
-WORKDIR /go/src/metax
-RUN tar zxf metax.tar.gz
+COPY . /go/src/dynaone
+WORKDIR /go/src/dynaone
+RUN tar zxf dynaone.tar.gz
 RUN go env -w GOPROXY=https://goproxy.cn,direct
 RUN go mod download
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /metax cmd/metax/main.go
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /dynaone cmd/dynaone/main.go
 
 # compressing binary files
 #cd /
-#upx -9 metax
+#upx -9 dynaone
 
 
 # building images with binary
@@ -27,8 +27,8 @@ RUN apk add tzdata  \
 # add curl, used for http service checking, can be installed without it if deployed in k8s
 RUN apk add curl
 
-COPY --from=build /metax /app/metax
-COPY --from=build /go/src/metax/configs/metax.yml /app/configs/metax.yml
+COPY --from=build /dynaone /app/dynaone
+COPY --from=build /go/src/dynaone/configs/dynaone.yml /app/configs/dynaone.yml
 
 # http port
 EXPOSE 8080
@@ -36,6 +36,6 @@ EXPOSE 8080
 
 WORKDIR /app
 
-CMD ["./metax", "-c", "configs/metax.yml"]
-# if you use the Configuration Center, metax.yml is changed to the Configuration Center configuration.
-#CMD ["./metax", "-c", "configs/metax.yml", "-enable-cc"]
+CMD ["./dynaone", "-c", "configs/dynaone.yml"]
+# if you use the Configuration Center, dynaone.yml is changed to the Configuration Center configuration.
+#CMD ["./dynaone", "-c", "configs/dynaone.yml", "-enable-cc"]

@@ -4,10 +4,10 @@ package main
 import (
 	"github.com/zhufuyi/sponge/pkg/app"
 
-	"metax/cmd/metax/initial"
+	"dynaone/cmd/dynaone/initial"
 )
 
-// @title metax api docs
+// @title dynaone api docs
 // @description http server api docs
 // @schemes http https
 // @version 2.0

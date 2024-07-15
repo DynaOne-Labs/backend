@@ -9,5 +9,5 @@ nacos:
   contextPath: "/nacos"     # path
   namespaceID: "3454d2b5-2455-4d0e-bf6d-e033b086bb4c" # namespace id
   group: "dev"                    # group name: dev, prod, test
-  dataID: "metax.yml"  # config file id
+  dataID: "dynaone.yml"  # config file id
   format: "yaml"                 # configuration file type: json,yaml,toml

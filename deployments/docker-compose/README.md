@@ -3,7 +3,7 @@ copy the configuration file to the configs directory before starting the service
 
 ```
 ├── configs
-│         └── metax.yml
+│         └── dynaone.yml
 └── docker-compose.yml
 ```
 

@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: metax-dm
-  namespace: metax
+  name: dynaone-dm
+  namespace: dynaone
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: metax
+      app: dynaone
   template:
     metadata:
-      name: metax-pod
+      name: dynaone-pod
       labels:
-        app: metax
+        app: dynaone
     spec:
       containers:
-        - name: metax
-          image: /metax/metax:latest
+        - name: dynaone
+          image: /dynaone/dynaone:latest
           # If using a local image, use Never, default is Always
           #imagePullPolicy: Never
-          command: ["./metax", "-c", "/app/configs/metax.yml"]
+          command: ["./dynaone", "-c", "/app/configs/dynaone.yml"]
           resources:
             requests:
               cpu: 10m
@@ -28,7 +28,7 @@ spec:
               cpu: 1000m
               memory: 1000Mi
           volumeMounts:
-            - name: metax-vl
+            - name: dynaone-vl
               mountPath: /app/configs/
               readOnly: true
 
@@ -58,6 +58,6 @@ spec:
       imagePullSecrets:
         - name: docker-auth-secret
       volumes:
-        - name: metax-vl
+        - name: dynaone-vl
           configMap:
-            name: metax-config
+            name: dynaone-config

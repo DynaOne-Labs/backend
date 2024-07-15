@@ -10,12 +10,12 @@ import (
 
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/configs"
-	"metax/internal/config"
+	"dynaone/configs"
+	"dynaone/internal/config"
 )
 
 func TestNewRouter(t *testing.T) {
-	err := config.Init(configs.Path("metax.yml"))
+	err := config.Init(configs.Path("dynaone.yml"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -35,7 +35,7 @@ func TestNewRouter(t *testing.T) {
 }
 
 func TestNewRouter2(t *testing.T) {
-	err := config.Init(configs.Path("metax.yml"))
+	err := config.Init(configs.Path("dynaone.yml"))
 	if err != nil {
 		t.Fatal(err)
 	}

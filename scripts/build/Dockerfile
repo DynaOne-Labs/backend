@@ -11,8 +11,8 @@ RUN apk add tzdata  \
 RUN apk add curl
 
 COPY configs/ /app/configs/
-COPY metax /app/metax
-RUN chmod +x /app/metax
+COPY dynaone /app/dynaone
+RUN chmod +x /app/dynaone
 
 # http port
 EXPOSE 8080
@@ -20,6 +20,6 @@ EXPOSE 8080
 
 WORKDIR /app
 
-CMD ["./metax", "-c", "configs/metax.yml"]
-# if you use the Configuration Center, metax.yml is changed to the Configuration Center configuration.
-#CMD ["./metax", "-c", "configs/metax.yml", "-enable-cc"]
+CMD ["./dynaone", "-c", "configs/dynaone.yml"]
+# if you use the Configuration Center, dynaone.yml is changed to the Configuration Center configuration.
+#CMD ["./dynaone", "-c", "configs/dynaone.yml", "-enable-cc"]
