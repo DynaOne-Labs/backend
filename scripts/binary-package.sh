@@ -1,6 +1,6 @@
 #!/bin/bash
 
-serviceName="metax"
+serviceName="dynaone"
 
 mkdir -p ${serviceName}-binary/configs
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # image name, prohibit uppercase letters in names.
-IMAGE_NAME="metax/metax"
+IMAGE_NAME="dynaone/dynaone"
 
 # image repo address, passed in via the first parameter
 REPO_HOST=$1

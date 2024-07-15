@@ -13,8 +13,8 @@ import (
 	"github.com/zhufuyi/sponge/pkg/gotest"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/cache"
-	"metax/internal/model"
+	"dynaone/internal/cache"
+	"dynaone/internal/model"
 )
 
 func newUserDao() *gotest.Dao {

@@ -265,7 +265,7 @@ host: localhost:8080
 info:
   contact: {}
   description: http server api docs
-  title: metax api docs
+  title: dynaone api docs
   version: "2.0"
 paths:
   /api/v1/user:

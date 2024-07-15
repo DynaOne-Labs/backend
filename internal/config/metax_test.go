@@ -7,11 +7,11 @@ import (
 
 	"github.com/zhufuyi/sponge/pkg/gofile"
 
-	"metax/configs"
+	"dynaone/configs"
 )
 
 func TestInit(t *testing.T) {
-	configFile := configs.Path("metax.yml")
+	configFile := configs.Path("dynaone.yml")
 	err := Init(configFile)
 	if gofile.IsExists(configFile) {
 		assert.NoError(t, err)
@@ -34,7 +34,7 @@ func TestInit(t *testing.T) {
 }
 
 func TestInitNacos(t *testing.T) {
-	configFile := configs.Path("metax_cc.yml")
+	configFile := configs.Path("dynaone_cc.yml")
 	_, err := NewCenter(configFile)
 	if gofile.IsExists(configFile) {
 		assert.NoError(t, err)

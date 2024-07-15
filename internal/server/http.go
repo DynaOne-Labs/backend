@@ -11,7 +11,7 @@ import (
 	"github.com/zhufuyi/sponge/pkg/app"
 	"github.com/zhufuyi/sponge/pkg/servicerd/registry"
 
-	"metax/internal/routers"
+	"dynaone/internal/routers"
 )
 
 var _ app.IServer = (*httpServer)(nil)

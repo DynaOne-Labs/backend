@@ -1,6 +1,6 @@
 #!/bin/bash
 
-serviceName="metax"
+serviceName="dynaone"
 
 function checkResult() {
     result=$1

@@ -20,7 +20,7 @@ kubectl apply -f ./
 
 view the start-up status.
 
-> kubectl get all -n metax
+> kubectl get all -n dynaone
 
 <br>
 
@@ -28,5 +28,5 @@ simple test of http port
 
 ```bash
 # mapping to the http port of the service on the local port
-kubectl port-forward --address=0.0.0.0 service/<metax-svc> 8080:8080 -n <metax>
+kubectl port-forward --address=0.0.0.0 service/<dynaone-svc> 8080:8080 -n <dynaone>
 ```

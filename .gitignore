@@ -22,5 +22,5 @@ dist/
 *.ipr
 *.iws
 
-cmd/metax/metax
+cmd/dynaone/dynaone
 

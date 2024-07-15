@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-PROJECT_NAME := "metax"
+PROJECT_NAME := "dynaone"
 PKG := "$(PROJECT_NAME)"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/ | grep -v /api/)
 
@@ -30,9 +30,9 @@ cover:
 # generate interactive visual function dependency graphs
 graph:
 	@echo "generating graph ......"
-	@cp -f cmd/metax/main.go .
-	go-callvis -skipbrowser -format=svg -nostd -file=metax metax
-	@rm -f main.go metax.gv
+	@cp -f cmd/dynaone/main.go .
+	go-callvis -skipbrowser -format=svg -nostd -file=dynaone dynaone
+	@rm -f main.go dynaone.gv
 
 
 .PHONY: docs
@@ -44,10 +44,10 @@ docs:
 
 
 .PHONY: build
-# build metax for linux amd64 binary
+# build dynaone for linux amd64 binary
 build:
-	@echo "building 'metax', linux binary file will output to 'cmd/metax'"
-	@cd cmd/metax && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
+	@echo "building 'dynaone', linux binary file will output to 'cmd/dynaone'"
+	@cd cmd/dynaone && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
 
 .PHONY: run
@@ -119,14 +119,14 @@ update-config:
 .PHONY: clean
 # clean binary file, cover.out, template file
 clean:
-	@rm -vrf cmd/metax/metax*
+	@rm -vrf cmd/dynaone/dynaone*
 	@rm -vrf cover.out
-	@rm -vrf main.go metax.gv
+	@rm -vrf main.go dynaone.gv
 	@rm -vrf internal/ecode/*.go.gen*
 	@rm -vrf internal/routers/*.go.gen*
 	@rm -vrf internal/handler/*.go.gen*
 	@rm -vrf internal/service/*.go.gen*
-	@rm -rf metax-binary.tar.gz
+	@rm -rf dynaone-binary.tar.gz
 	@echo "clean finished"
 
 

@@ -13,8 +13,8 @@ import (
 	"github.com/zhufuyi/sponge/pkg/ggorm/query"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/cache"
-	"metax/internal/model"
+	"dynaone/internal/cache"
+	"dynaone/internal/model"
 )
 
 var _ UserDao = (*userDao)(nil)

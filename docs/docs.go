@@ -770,7 +770,7 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "localhost:8080",
 	BasePath:         "",
 	Schemes:          []string{"http", "https"},
-	Title:            "metax api docs",
+	Title:            "dynaone api docs",
 	Description:      "http server api docs",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,

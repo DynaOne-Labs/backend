@@ -9,7 +9,7 @@ import (
 	"github.com/zhufuyi/sponge/pkg/encoding"
 	"github.com/zhufuyi/sponge/pkg/utils"
 
-	"metax/internal/model"
+	"dynaone/internal/model"
 )
 
 const (

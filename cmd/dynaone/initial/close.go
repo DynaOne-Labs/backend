@@ -7,8 +7,8 @@ import (
 	"github.com/zhufuyi/sponge/pkg/app"
 	"github.com/zhufuyi/sponge/pkg/tracer"
 
-	"metax/internal/config"
-	"metax/internal/model"
+	"dynaone/internal/config"
+	"dynaone/internal/model"
 )
 
 // Close releasing resources after service exit

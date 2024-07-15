@@ -1,4 +1,4 @@
-module metax
+module dynaone
 
 go 1.20
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-serverName="metax"
+serverName="dynaone"
 
 binaryFile="cmd/${serverName}/${serverName}"
 

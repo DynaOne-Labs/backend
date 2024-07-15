@@ -3,7 +3,7 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 
-	"metax/internal/handler"
+	"dynaone/internal/handler"
 )
 
 func init() {

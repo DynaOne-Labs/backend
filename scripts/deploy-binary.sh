@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 
-set serviceName "metax"
+set serviceName "dynaone"
 
 # parameters
 set username [lindex $argv 0]

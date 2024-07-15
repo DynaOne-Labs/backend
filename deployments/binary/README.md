@@ -3,8 +3,8 @@ copy the configuration file to the configs directory and binary file before star
 
 ```
 ├── configs
-│         └── metax.yml
-├── metax
+│         └── dynaone.yml
+├── dynaone
 ├── deploy.sh
 └── run.sh
 ```

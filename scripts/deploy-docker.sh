@@ -10,8 +10,8 @@ function checkResult() {
 }
 
 mkdir -p ${dockerComposeFilePath}/configs
-if [ ! -f "${dockerComposeFilePath}/configs/metax.yml" ];then
-  cp configs/metax.yml ${dockerComposeFilePath}/configs
+if [ ! -f "${dockerComposeFilePath}/configs/dynaone.yml" ];then
+  cp configs/dynaone.yml ${dockerComposeFilePath}/configs
 fi
 
 # shellcheck disable=SC2164
